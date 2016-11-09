@@ -38,74 +38,80 @@
 	<main class="container catalog">
 		<aside class="catalog-parameter">
 			<form>
-				<div class="price">
-					<b>стоимость</b>
-					<!-- Выбор цены бегунком -->
-					<label>От
-						<input type="text" name="min_price" value="0">
-					</label>
-					<label>До
-						<input type="text" name="max_price" value="15000">
-					</label>
-					
+				<fieldset>
+					<legend>Стоимость</legend>
+					<div class="price">
+						<!-- Выбор цены бегунком -->
+						<div class="range">Бегунок</div>
+						<label>От
+							<input type="text" name="min_price" value="0">
+						</label>
+						<label>До
+							<input type="text" name="max_price" value="15000">
+						</label>
+					</fieldset>	
 				</div>
 				<div class="catalog-parameter-grid">
-					<b>сетка</b>
-					<ul>
-						<li>
-							<label>
-								<input type="radio" name="grid" checked>
-								Адаптивная
-							</label>
-						</li>
-						<li>
-							<label>
-								<input type="radio" name="grid">
-								Фиксированная
-							</label>
-						</li>
-						<li>
-							<label>
-								<input type="radio" name="grid">
-								Резиновая
-							</label>
-						</li>
-					</ul>
+					<fieldset>
+						<legend>Сетка</legend>
+						<ul>
+							<li>
+								<label>
+									<input type="radio" name="grid" checked>
+									Адаптивная
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="radio" name="grid">
+									Фиксированная
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="radio" name="grid">
+									Резиновая
+								</label>
+							</li>
+						</ul>
+					</fieldset>
 				</div>
 				<div class="features">
-					<b>Особенности</b>
-					<ul>
-						<li>
-							<label>
-								<input type="checkbox" name="features" checked>
-								Cлайдер
-							</label>
-						</li>
-						<li>
-							<label>
-								<input type="checkbox" name="features">
-								Блок преимуществ
-							</label>
-						</li>
-						<li>
-							<label>
-								<input type="checkbox" name="features" checked>
-								Новости
-							</label>
-						</li>
-						<li>
-							<label>
-								<input type="checkbox" name="features">
-								Галерея
-							</label>
-						</li>
-						<li>
-							<label>
-								<input type="checkbox" name="features">
-								Корзина
-							</label>
-						</li>
-					</ul>
+					<fieldset>
+						<legend>Особенности</legend>
+						<ul>
+							<li>
+								<label>
+									<input type="checkbox" name="features" checked>
+									Cлайдер
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="checkbox" name="features">
+									Блок преимуществ
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="checkbox" name="features" checked>
+									Новости
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="checkbox" name="features">
+									Галерея
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="checkbox" name="features">
+									Корзина
+								</label>
+							</li>
+						</ul>
+					</fieldset>
 				</div>
 				<input type="submit" name="show" value="показать">
 			</form>
@@ -115,33 +121,35 @@
 			<div class="sort">
 				<b>Сортировать:</b>
 				<div class="sort-byprice">
-					<b>по цене:</b>
+					<a href="#">По цене:</a>
 				</div>
 				<div class="sort-bytype">
-					<b>по типу:</b>
+					<a href="">По типу:</a>
 				</div>
 				<div class="sort-byfunctional">
-					<b>по функционалу:</b>
+					<a href="">По функционалу:</a>
 				</div>
 			</div>
-			<figure class="catalog-item">
-				<img src="assets/img/model1.jpg" width="240" height="240" alt="макет">
-			</figure>
-			<figure class="catalog-item">
-				<img src="assets/img/model2.jpg" width="240" height="240" alt="макет">
-			</figure>
-			<figure class="catalog-item">
-				<img src="assets/img/model3.jpg" width="240" height="240" alt="макет">
-			</figure>
-			<figure class="catalog-item">
-				<img src="assets/img/model4.jpg" width="240" height="240" alt="макет">
-			</figure>
-			<figure class="catalog-item">
-				<img src="assets/img/model5.jpg" width="240" height="240" alt="макет">
-			</figure>
-			<figure class="catalog-item">
-				<img src="assets/img/model6.jpg" width="240" height="240" alt="макет">
-			</figure>
+			<div class="catalog-wrapper">
+				<figure class="catalog-item">
+					<img src="assets/img/model1.jpg" width="240" height="240" alt="макет">
+				</figure>
+				<figure class="catalog-item">
+					<img src="assets/img/model2.jpg" width="240" height="240" alt="макет">
+				</figure>
+				<figure class="catalog-item">
+					<img src="assets/img/model3.jpg" width="240" height="240" alt="макет">
+				</figure>
+				<figure class="catalog-item">
+					<img src="assets/img/model4.jpg" width="240" height="240" alt="макет">
+				</figure>
+				<figure class="catalog-item">
+					<img src="assets/img/model5.jpg" width="240" height="240" alt="макет">
+				</figure>
+				<figure class="catalog-item">
+					<img src="assets/img/model6.jpg" width="240" height="240" alt="макет">
+				</figure>
+			</div>
 			<button class="catalog-next">1</button>
 			<button class="catalog-next">2</button>	
 			<button class="catalog-next">3</button>
