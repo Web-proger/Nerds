@@ -24,6 +24,10 @@ body {
 
 
 /*---Общее----*/
+figure {
+	margin: 0;
+}
+
 .container {
 	width: 880px;
 	margin: 0 auto;
@@ -67,7 +71,7 @@ body {
 
 /*-----index.html-----*/
 
-.main-header {
+.main-header-index {
 	height: 435px;
 }
 
@@ -154,4 +158,42 @@ body {
 .map {
 	width: 1200px;
 	margin: 0 auto;
+}
+
+/*-----catalog.html-----*/
+
+.main-header-catalog {
+	min-height: 330px;
+}
+
+.header-caption {
+	padding-top: 70px;
+	padding-bottom: 90px;
+	text-align: center;
+}
+
+.catalog-parameter {
+	float: left;
+	width: 240px;
+	margin-right: 80px;
+}
+
+.catalog-wrapper {
+	float: left;
+	width: 560px;
+}
+
+.catalog-item {
+	float: left;
+	width: 240px;
+	margin-right: 80px;
+	margin-bottom: 80px;
+}
+
+.catalog-item:nth-child(2n) {
+	margin-right: 0;
+}
+
+.catalog-btn {
+	margin-bottom: 80px;
 }

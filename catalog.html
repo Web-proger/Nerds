@@ -6,39 +6,42 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-	<header class="main-header">
+	<header class="main-header-catalog">
 		<div class="container">
-			<div class="logo">
-				<img src="assets/img/logo.png" width="139" height="56" alt="логотип">
-			</div>
-			<nav class="main-navigator">
-				<ul>
-					<li>
-						<a href="#">Студия</a>
-					</li>
-					<li>
-						<a href="#">Клиенты</a>
-					</li>
-					<li>
-						<a href="#">Магазин</a>
-					</li>
-					<li>
-						<a href="#">Контакты</a>
-					</li>
-				</ul>
-			</nav>
-			<div class="cart">
-				<a class="cart-link" href="#">Корзина</a>
+			<div class="wrapper clearfix">
+				<div class="logo">
+					<img src="assets/img/logo.png" width="139" height="56" alt="логотип">
+				</div>
+				<nav class="main-navigator">
+					<ul>
+						<li>
+							<a href="#">Студия</a>
+						</li>
+						<li>
+							<a href="#">Клиенты</a>
+						</li>
+						<li>
+							<a href="#">Магазин</a>
+						</li>
+						<li>
+							<a href="#">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="cart">
+					<a class="cart-link" href="#">Корзина</a>
+				</div>
 			</div>
 			<div class="header-caption">
-				<h1>Добро пожаловать в магазин готовых макетов</h1>
+				<h1>Добро пожаловать в магазин <br> готовых макетов</h1>
 			</div>
 		</div>
 	</header>
 
-	<main class="container catalog">
+	<main class="catalog container">
 		<aside class="catalog-parameter">
 			<form>
+			<div>	
 				<fieldset>
 					<legend>Стоимость</legend>
 					<div class="price">
@@ -50,6 +53,7 @@
 						<label>До
 							<input type="text" name="max_price" value="15000">
 						</label>
+					</div>
 					</fieldset>	
 				</div>
 				<div class="catalog-parameter-grid">
@@ -118,43 +122,55 @@
 			</form>
 		</aside>
 
-		<div class="catalog-layouts">
+		<div class="catalog-layouts clearfix">
 			<div class="sort">
 				<b>Сортировать:</b>
-				<div class="sort-byprice">
+				<strong class="sort-byprice">
 					<a href="#">По цене:</a>
-				</div>
-				<div class="sort-bytype">
+				</strong>
+				<strong class="sort-bytype">
 					<a href="">По типу:</a>
-				</div>
-				<div class="sort-byfunctional">
+				</strong>
+				<strong class="sort-byfunctional">
 					<a href="">По функционалу:</a>
-				</div>
+				</strong>
 			</div>
 			<div class="catalog-wrapper">
 				<figure class="catalog-item">
+					<div>Точечки</div>
 					<img src="assets/img/model1.jpg" width="240" height="240" alt="макет">
 				</figure>
 				<figure class="catalog-item">
+					<div>Точечки</div>
 					<img src="assets/img/model2.jpg" width="240" height="240" alt="макет">
 				</figure>
 				<figure class="catalog-item">
+					<div>Точечки</div>
 					<img src="assets/img/model3.jpg" width="240" height="240" alt="макет">
 				</figure>
 				<figure class="catalog-item">
+					<div>Точечки</div>
 					<img src="assets/img/model4.jpg" width="240" height="240" alt="макет">
 				</figure>
 				<figure class="catalog-item">
+					<div>Точечки</div>
 					<img src="assets/img/model5.jpg" width="240" height="240" alt="макет">
 				</figure>
 				<figure class="catalog-item">
+					<div>Точечки</div>
 					<img src="assets/img/model6.jpg" width="240" height="240" alt="макет">
 				</figure>
+				<div class="catalog-btn">
+					<button class="catalog-next">1</button>
+					<button class="catalog-next">2</button>	
+					<button class="catalog-next">3</button>
+					<button class="catalog-next">следущая</button>	
+				</div>
+				
+			
 			</div>
-			<button class="catalog-next">1</button>
-			<button class="catalog-next">2</button>	
-			<button class="catalog-next">3</button>
-			<button class="catalog-next">следущая</button>					
+			
+							
 		</div>
 
 	</main>
@@ -162,7 +178,7 @@
 			<img src="assets/img/fullmap.jpg" width="100%" alt="Как нас найти">
 		</div>
 
-	<footer class="main-footer container">
+	<footer class="main-footer container clearfix">
 		<div class="social">
 			<div class="social-element">
 				<img src="#" width="40" height="40" alt="VK">		
