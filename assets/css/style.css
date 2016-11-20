@@ -195,5 +195,6 @@ figure {
 }
 
 .catalog-btn {
+	float: left;
 	margin-bottom: 80px;
 }
