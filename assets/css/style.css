@@ -8,7 +8,6 @@ body {
 }
 
 .main-header-index {
-	height: 436px;
 	background-color: #eeeeee;
 	color: #000000;
 }
@@ -22,23 +21,24 @@ body {
 	text-decoration: none;
 }
 
-/*Главные блоки*/
+/*Главные блоки
 .container,
 .main-footer { 
 	border: 3px solid red;
 }
-/*второстепенные блоки*/
+второстепенные блоки
 .main-navigator {
 	border: 2px solid blue;
 
 } 
-/*вложенные во второстепенные блоки*/
+вложенные во второстепенные блоки
 .logo,
 .main-navigator,
 .cart,
-.wrapper { 
+.main-slider { 
 	border: 1px solid yellow;
 }
+*/
 
 
 /*---Общее----*/
@@ -56,6 +56,17 @@ figure {
 	content: "";
 	display: table;
 	clear: both;
+}
+
+.btn {
+	padding: 10px 40px;
+	font-size: 12px;
+	line-height: 18px;
+	background-color: #fb565a;
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 4px;
 }
 
 .main-footer {
@@ -87,13 +98,10 @@ figure {
 ----------------------*/
 
 /*-----index.html-----*/
-
-
-
 .logo {
 	float: left;
 	padding-top: 27px;
-	margin-right: 180px;
+	margin-right: 183px;
 	width: 139px;
 	height: 56px;
 }
@@ -110,7 +118,7 @@ figure {
 }
 
 .main-navigator li {
-	margin-right: 40px;
+	margin-right: 45px;
 	font-size: 14px;
 	line-height: 30px;
 }
@@ -122,6 +130,7 @@ figure {
 .main-navigator a,
 .cart a {
 	color: #000000;
+	text-transform: uppercase;
 }
 
 .cart {
@@ -133,13 +142,57 @@ figure {
 	
 }
 
+.main-slider {
+	position: relative;
+	min-height: 353px;	
+}
+
 .slider-description {
+	padding-top: 72px;
 	float: left;
-	width: 460px;
+	width: 470px;
+}
+
+.slider-description h2 {
+	margin: 0;
+	margin-bottom: 18px;
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: normal;
+}
+
+.slider-description p {
+	margin: 0;
+	margin-bottom: 35px;
+}
+
+.slider-btn {
+	padding: 12px 70px;
+	margin-bottom: 80px;
+}
+
+.slider-switch {
+	position: absolute;
+	left: 50%;
+	bottom: 89px;
+	margin-left: -34px;
+}
+
+.slider-switch strong {
+	display: inline-block;
+	margin-right: 4px;
+	background-color: #ffffff;
+	border-radius: 5px;
+	width: 10px;
+	height: 10px;
+
 }
 
 .slider-img {
-	float: right;
+	position: absolute;
+	right: -2px;
+	bottom: 64px;
+/*	float: right; */
 	width: 340px;
 }
 
