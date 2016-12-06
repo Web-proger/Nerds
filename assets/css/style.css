@@ -1,9 +1,27 @@
 
 /* для тестирования */
 body {
-	background: gray;
-	color: white;
+	font-family: 'Roboto', "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 22px;
+	color: #000000;
 }
+
+.main-header-index {
+	height: 436px;
+	background-color: #eeeeee;
+	color: #000000;
+}
+
+.main-footer, .main-index {
+	background-color: #ffffff;
+	color: #000000;
+}
+
+.main-header-index a {
+	text-decoration: none;
+}
+
 /*Главные блоки*/
 .container,
 .main-footer { 
@@ -31,8 +49,7 @@ figure {
 .container {
 	width: 880px;
 	margin: 0 auto;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding: 0 10px;
 }
 
 .clearfix::after {
@@ -60,7 +77,7 @@ figure {
 /*------Временное----*/
 .social-element {
 	display: inline-block;
-	margin-right: 25pxl
+	margin-right: 25px;
 }
 /*--------------------*/
 
@@ -71,27 +88,54 @@ figure {
 
 /*-----index.html-----*/
 
-.main-header-index {
-	height: 435px;
-}
+
 
 .logo {
 	float: left;
+	padding-top: 27px;
 	margin-right: 180px;
+	width: 139px;
+	height: 56px;
 }
 
 .main-navigator {
 	float: left;
+	padding-top: 54px;
+	font-size: 0;
+	list-style: none;
+}
+
+.main-navigator ul {
+	padding: 0;
+}
+
+.main-navigator li {
+	margin-right: 40px;
+	font-size: 14px;
+	line-height: 30px;
+}
+
+.main-navigator li:last-child {
+	margin-right: 0;
+}
+
+.main-navigator a,
+.cart a {
+	color: #000000;
 }
 
 .cart {
 	float: right;
+	padding-left: 35px;
+	padding-top: 54px;
+	font-size: 14px;
+	line-height: 30px;
+	
 }
 
 .slider-description {
 	float: left;
 	width: 460px;
-	margin-right: 80px;
 }
 
 .slider-img {
