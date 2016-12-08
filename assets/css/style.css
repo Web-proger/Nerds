@@ -7,7 +7,7 @@ body {
 	color: #000000;
 }
 
-.main-header-index {
+.main-header {
 	background-color: #eeeeee;
 	color: #000000;
 }
@@ -17,7 +17,7 @@ body {
 	color: #000000;
 }
 
-.main-header-index a {
+.main-header a {
 	text-decoration: none;
 }
 
@@ -70,7 +70,7 @@ figure {
 }
 
 .main-footer {
-	padding-top: 80px;
+	padding-top: 77px;
 	padding-bottom: 75px;
 }
 
@@ -204,7 +204,7 @@ figure {
 
 .potential {
 	padding-top: 80px;
-	margin-bottom: 80px;
+	margin-bottom: 77px;
 }
 
 .potential-element {
@@ -218,14 +218,61 @@ figure {
 	margin-right: 0;
 }
 
+.potential-element img {
+	width: 240px;
+	height: 124px;
+	margin-bottom: 17px;
+}
+
+.potential-element b {
+	font-size: 18px;
+	line-height: 30px;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+.potential-element p {
+	font-size: 15px;
+	line-height: 22px;
+	margin-bottom: 30px;
+}
+
 .about {
-	margin-bottom: 70px;
+	margin-bottom: 20px;
 	padding-top: 70px;
 }
 
 .about-info {
 	float: left;
-	width: 620px;
+	width: 619px;
+}
+
+.about-info strong {
+	font-size: 36px;
+	line-height: 36px;
+}
+
+.about h3 {
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-bottom: 22px;
+}
+
+.about-info .principles {
+	margin-bottom: 44px;
+}
+
+.about ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.about li {
+	padding-left: 35px;
+	margin-bottom: 23px;
 }
 
 .about-stat {
@@ -233,16 +280,38 @@ figure {
 	width: 240px;
 }
 
+.about-logo {
+	padding-top: 4px;
+	padding-left: 8px;
+	margin-bottom: 65px;
+	text-align: center;
+}
+
+.about-logo img {
+	display: block;
+	margin: 0 auto;
+	width: 187px;
+	height: 75px;
+	margin-bottom: 27px;
+}
+
+.about-logo .since {
+	display: inline-block;
+	padding: 0 70px;
+	text-transform: uppercase;
+
+}
+
 .projects {
-	padding-top: 50px;
+	padding-top: 70px;
+	padding-left: 5px;
 	padding-bottom: 35px;
-	margin-bottom: 85px;
+	margin-bottom: 81px;
 }
 
 .projects-element {
 	display: inline-block;
-	margin-right: 100px;
-	width: 220px;
+	margin-right: 120px;
 	vertical-align: middle;
 }
 
@@ -258,6 +327,17 @@ figure {
 	margin: 0 auto;
 }
 
+.social-element {
+	width: 40px;
+	height: 40px;
+}
+
+.discont strong {
+	display: block;
+	font-size: 36px;
+	font-weight: 400;
+}
+
 /*-----catalog.html-----*/
 
 .main-header-catalog {
@@ -268,6 +348,12 @@ figure {
 	padding-top: 70px;
 	padding-bottom: 90px;
 	text-align: center;
+}
+
+.header-caption h1 {
+	font-size: 40px;
+	font-weight: 400;
+	line-height: 48px;
 }
 
 .catalog-parameter {
