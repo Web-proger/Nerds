@@ -21,26 +21,6 @@ body {
 	text-decoration: none;
 }
 
-/*Главные блоки
-.container,
-.main-footer { 
-	border: 3px solid red;
-}
-второстепенные блоки
-.main-navigator {
-	border: 2px solid blue;
-
-} 
-вложенные во второстепенные блоки
-.logo,
-.main-navigator,
-.cart,
-.main-slider { 
-	border: 1px solid yellow;
-}
-*/
-
-
 /*---Общее----*/
 figure {
 	margin: 0;
@@ -162,6 +142,34 @@ figure {
 	min-height: 353px;	
 }
 
+.slide-1 {
+	display: ;
+}
+
+.slide-2 {
+	display: none;
+}
+
+
+.slide-3 {
+	display: none;
+}
+
+.current-slide {
+	position: relative;
+}
+
+.current-slide::before {
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	content: "";
+	width: 4px;
+	height: 4px;
+	border-radius: 2px;
+	background-color: #c1c1c1;
+}
+
 .slider-description {
 	padding-top: 72px;
 	float: left;
@@ -202,13 +210,31 @@ figure {
 	height: 10px;
 }
 
-.slider-img {
+.slider1-img {
 	position: absolute;
 	right: -2px;
 	bottom: 64px;
-/*	float: right; */
 	width: 340px;
+	height: 231px;
 }
+
+.slider2-img {
+	position: absolute;
+	right: 10px;
+	bottom: 65px;
+	width: 230px;
+	height: 249px;
+}
+
+.slider3-img {
+	position: absolute;
+	right: 7px;
+	bottom: 0;
+	width: 333px;
+	height: 319px;
+}
+
+
 
 /*перенести в другой блок*/
 .main-navigator li {
@@ -513,4 +539,61 @@ figure {
 .btn-next  {
 	text-transform: uppercase;
 	width: 140px;
+}
+
+/*-------popup------*/
+.modal-content {
+	position: fixed;
+	z-index: 10;
+	top: 275px;
+	left: 50%;
+	margin-left: -228px;
+	width: 455px;
+	height: 315px;
+	padding: 50px 90px 50px 80px;
+	background: #ffffff;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-close {
+	position: absolute;
+	top: 6px;
+	right: 6px;
+	font-size: 0;
+	width: 41px;
+	height: 41px;
+	background: #fb565a;
+	border: 0;
+	outline: 0;
+	border-radius: 20px;
+}
+
+.modal-content-close::before, 
+.modal-content-close::after {
+	position: absolute;
+	content: "";
+	top: 18px;
+	right: 7px;
+	height: 5px;
+	width: 27px;
+	background-color: #ffffff;
+}
+
+.modal-content-close::after {
+	transform: rotate(45deg);
+}
+
+.modal-content-close::before {
+	transform: rotate(-45deg);
+}
+
+
+.modal-content textarea {
+	width: 100%;
+}
+
+ .modal-content button.send-form {
+	width: 100%;
+	border: 0;
+	outline: 0;
 }
