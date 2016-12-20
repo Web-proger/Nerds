@@ -212,5 +212,29 @@
 			<p>Скидка 10% для друзей из социальных сетей</p>
 		</div>
 	</footer>
+	<div class="modal-content">
+		<button class="modal-content-close" type="button" name="modal-close" title="Закрыть">
+			Закрыть
+		</button>
+		<form class="modal-content-form" action="post">
+			<div class="name-email clearfix">
+				<div>
+					<label>Ваше имя:
+						<input type="text" name="name" placeholder="ПРЕДСТАВЬТЕСЬ ПОЖАЛУЙСТА">
+					</label>
+				</div>
+				<div>
+					<label>Ваш e-mail:
+						<input type="text" name="email" placeholder="ДЛЯ ОТПРАВКИ ОТВЕТА">
+					</label>
+				</div>
+			</div>
+			<label>Текст письма:
+				<textarea name="latter" placeholder="В СВОБОДНОЙ ФОРМЕ"></textarea>
+			</label>
+			<!--изменить тип на submit-->
+			<button class="btn send-form" type="submit" name="sent-form">Отправить</button>
+		</form>
+	</div>
 </body>
 </html>
