@@ -7,8 +7,11 @@ body {
 	color: #000000;
 }
 
-.main-header {
+header {
 	background-color: #eeeeee;
+}
+
+.main-header {
 	color: #000000;
 }
 
@@ -423,9 +426,54 @@ figure {
 }
 
 .map {
+	position: relative;
 	width: 1200px;
 	margin: 0 auto;
 }
+
+.map-label {
+	position: absolute;
+	left: 839px;
+	top: 112px;
+}
+
+.feedback {
+	position: absolute;
+	left: 160px;
+	top: 88px;
+	width: 210px;
+	height: 240px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: #ffffff;
+}
+
+.feedback p {
+	margin-bottom: 16px;
+	font-size: 16px;
+	line-height: 30px;
+}
+
+.feedback div {
+	margin-bottom: 26px;
+	font-family: 'Roboto', "Arial", sans-serif;
+	font-size: 16px;
+
+	line-height: 20px;
+	color: #949494;
+}
+
+.feedback button {
+	width: 100%;
+	outline: none;
+	border: none;
+}
+
+.feedback button:hover {
+	background-color: #d6494d;
+	cursor: pointer;
+}
+
 
 .social-element {
 	position: relative;
@@ -438,6 +486,7 @@ figure {
 
 .social-element:hover {
 	background-color: #fb565a;
+	cursor: pointer;
 }
 
 .social-element:active {
