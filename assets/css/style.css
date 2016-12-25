@@ -581,6 +581,7 @@ figure {
 }
 
 .catalog-list-item {
+	position: relative;
 	display: inline-block;
 	width: 240px;
 	margin-bottom: 74px;
@@ -590,6 +591,37 @@ figure {
 .catalog-list-item:nth-child(2n) {
 	margin-right: 0;
 	margin-left: -4px;
+}
+
+.buy-menu {
+	position: absolute;
+	left: 20px;
+	bottom: 25px;
+	width: 140px;
+	height: 140px;
+	padding: 30px;
+	background-color: #ffffff;
+	color: #000000;
+}
+
+.maket-name {
+	text-align: center;
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.maket-description {
+	text-align: center;
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.maket-price {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	right: 20px;
+	text-align: center;
 }
 
 .catalog-list-item-decor {
