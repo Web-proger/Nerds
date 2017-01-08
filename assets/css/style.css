@@ -755,6 +755,10 @@ input[type="checkbox"]:checked + .checkbox-indicator::after {
 	box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
+.modal-content-open {
+	display: block;
+}
+
 .modal-content form {
 	font-size: 16px;
 	line-height: 18px;
@@ -822,6 +826,11 @@ input[type="checkbox"]:checked + .checkbox-indicator::after {
 	border: 0;
 	outline: 0;
 	border-radius: 20px;
+}
+
+.modal-content-close:hover,
+.send-form:hover {
+	background-color: #d6494d;
 }
 
 .modal-content-close::before, 
