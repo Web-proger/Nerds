@@ -68,11 +68,6 @@ figure {
 	width: 550px;
 }
 
-/*------Временное----*/
-.social-element {
-	display: inline-block;
-	margin-right: 25px;
-}
 /*--------------------*/
 
 
@@ -483,6 +478,8 @@ figure {
 
 .social-element {
 	position: relative;
+	display: inline-block;
+	margin-right: 25px;
 	width: 40px;
 	height: 40px;
 	border-radius: 20px;
@@ -493,6 +490,16 @@ figure {
 .social-element:hover {
 	background-color: #fb565a;
 	cursor: pointer;
+	transform: rotate(360deg);
+	transition: 0.7s;
+	animation-name: social-animation-in;
+	animation-duration: 0.7s;
+}
+
+@keyframes social-animation-in {
+	0% {background-color: #e1e1e1}
+	100% {background-color: #fb565a}
+	}
 }
 
 .social-element:active {
@@ -863,4 +870,3 @@ input[type="checkbox"]:checked + .checkbox-indicator::after {
 	border: 0;
 	outline: 0;
 }
-
