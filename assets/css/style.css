@@ -146,7 +146,7 @@ figure {
 }
 
 .slide-1 {
-	display: ;
+	display: none;
 }
 
 .slide-2 {
@@ -156,6 +156,11 @@ figure {
 
 .slide-3 {
 	display: none;
+}
+
+.visible {
+	display: block;
+	z-index: 10;
 }
 
 .current-slide {
@@ -211,6 +216,7 @@ figure {
 	border-radius: 5px;
 	width: 10px;
 	height: 10px;
+	cursor: pointer;
 }
 
 .slider1-img {

@@ -5,6 +5,13 @@ var form = popup.querySelector(".modal-content-form");
 var nameInForm = popup.querySelector("[name=name]");
 var emailInForm = popup.querySelector("[name=email]");
 var letterInForm = popup.querySelector("[name=letter]");
+var slider = document.querySelector(".main-slider");
+var slide1 = slider.querySelector(".slide-1");
+var slide2 = slider.querySelector(".slide-2");
+var slide3 = slider.querySelector(".slide-3");
+var sswitch1 = slider.querySelector(".sswitch1");
+var sswitch2 = slider.querySelector(".sswitch2");
+var sswitch3 = slider.querySelector(".sswitch3");
 
 openFormBtn.addEventListener("click", function(event){
 	event.preventDefault();
@@ -40,3 +47,33 @@ form.addEventListener("submit", function(event) {
 		popup.classList.remove("modal-content-open");
 	};
 });
+
+sswitch1.addEventListener("click", function(event) {
+	slide1.classList.add("visible");
+	slide2.classList.remove("visible");
+	slide3.classList.remove("visible");
+	sswitch1.classList.add("current-slide");
+	sswitch2.classList.remove("current-slide");
+	sswitch3.classList.remove("current-slide");
+	console.log("Включаем слайд 1");
+})
+
+sswitch2.addEventListener("click", function(event) {
+	slide1.classList.remove("visible");
+	slide2.classList.add("visible");
+	slide3.classList.remove("visible");
+	sswitch1.classList.remove("current-slide");
+	sswitch2.classList.add("current-slide");
+	sswitch3.classList.remove("current-slide");
+	console.log("Включаем слайд 2");
+})
+
+sswitch3.addEventListener("click", function(event) {
+	slide1.classList.remove("visible");
+	slide2.classList.remove("visible");
+	slide3.classList.add("visible");
+	sswitch1.classList.remove("current-slide");
+	sswitch2.classList.remove("current-slide");
+	sswitch3.classList.add("current-slide");
+	console.log("Включаем слайд 3");
+})
